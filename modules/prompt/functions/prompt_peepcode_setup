@@ -1,3 +1,4 @@
+#
 # A simple theme from PeepCode.
 # http://peepcode.com/blog/2012/my-command-line-prompt
 #
@@ -45,7 +46,7 @@ function prompt_peepcode_setup {
   zstyle ':prezto:module:git:info:keys' format 'rprompt' '%b%c%s%D'
 
   # Set ruby-info parameters.
-  zstyle ':prezto:module:ruby:info:version' format ' %F{red}%v%f'
+  zstyle ':prezto:module:ruby:info:version' format ' %F{white}%v%f'
 
   # Define prompts.
   PROMPT="

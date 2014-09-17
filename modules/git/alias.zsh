@@ -192,6 +192,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias glb='git log --topo-order --pretty=format:"${_git_log_brief_format}"'
   alias glc='git shortlog --summary --numbered'
   alias glS='git log --show-signature'
+  alias glh='git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format="%(refname:short)"'
 
   # Merge (m)
   alias gm='git merge'
@@ -261,6 +262,8 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gtv='git verify-tag'
 
   # Working Copy (w)
+  alias gd='git diff'
+  alias gds='git diff --staged'
   alias gws='git status --ignore-submodules=${_git_status_ignore_submodules} --short'
   alias gwS='git status --ignore-submodules=${_git_status_ignore_submodules}'
   alias gwd='git diff --no-ext-diff'

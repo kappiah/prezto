@@ -239,7 +239,7 @@ if ! zstyle -t ':prezto:module:git:alias' skip 'yes'; then
   alias gsd='git stash show --patch --stat'
   alias gsp='git stash pop'
   alias gsr='git-stash-recover'
-  alias gss='git stash save --include-untracked'
+  alias gsu='git stash save --include-untracked'
   alias gsS='git stash save --patch --no-keep-index'
   alias gsw='git stash save --include-untracked --keep-index'
 
